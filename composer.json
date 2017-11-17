@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-littlegatekeeper",
+    "name": "stefanocurnis/laravel-littlegatekeeper",
     "description": "Protect pages from access with a universal username/password",
     "keywords": [
         "spatie",
