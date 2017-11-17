@@ -14,18 +14,6 @@ class LittleGateKeeperServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/littlegatekeeper.php' => config_path('littlegatekeeper.php'),
-        ], 'config');
-    }
-
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
-    public function register()
-    {
         $this->mergeConfigFrom(
            __DIR__.'/../config/littlegatekeeper.php', 'littlegatekeeper'
         );
@@ -41,5 +29,19 @@ class LittleGateKeeperServiceProvider extends ServiceProvider
         );
 
         $this->app->alias(Authenticator::class, 'littlegatekeeper');
+        
+        $this->publishes([
+            __DIR__.'/../config/littlegatekeeper.php' => config_path('littlegatekeeper.php'),
+        ], 'config');
+    }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        
     }
 }
