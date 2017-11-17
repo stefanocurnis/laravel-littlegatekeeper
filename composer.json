@@ -40,7 +40,7 @@
             "Spatie\\LittleGateKeeper\\LittleGateKeeperServiceProvider"
         ],
         "aliases": {
-            "Html": "Spatie\\LittleGateKeeper\\LittleGateKeeperFacade"
+            "LittleGateKeeper": "Spatie\\LittleGateKeeper\\LittleGateKeeperFacade"
         }
     }
 }
