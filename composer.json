@@ -34,5 +34,13 @@
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
+    },
+    "laravel": {
+        "providers": [
+            "Spatie\\LittleGateKeeper\\LittleGateKeeperServiceProvider"
+        ],
+        "aliases": {
+            "Html": "Spatie\\LittleGateKeeper\\LittleGateKeeperFacade"
+        }
     }
 }
